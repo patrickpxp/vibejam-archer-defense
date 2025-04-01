@@ -13,8 +13,8 @@ class AssetLoader {
 
         this.assets = {}; // Store loaded assets { key: loadedObject }
         this.assetsToLoad = { // Define assets to load { key: path }
-            // Models
-            'tower': 'assets/models/building_tower_base_red.gltf', // Replace with your actual paths
+            // Models (Paths updated for Vite's public directory handling - relative to public root)
+            'tower': '/assets/models/building_tower_base_red.gltf',
             'bow': null,
             'arrow': null,
             'quiver': null, // Added for decoration
@@ -22,19 +22,19 @@ class AssetLoader {
             'orc': null, // Example additional enemy
 
             // Textures (Example)
-            // 'groundTexture': 'assets/textures/grass.jpg',
+            // 'groundTexture': '/assets/textures/grass.jpg', // Example texture path update
 
-            // Audio (Using Howler directly for loading is often simpler)
+            // Audio (Paths updated for Vite's public directory handling - relative to public root)
             // If preloading with Howler is desired, do it in AudioManager
             // Or load paths here for AudioManager to use
-             'bowDraw': 'assets/audio/bow_draw.wav',
-             'arrowShoot': 'assets/audio/arrow_shoot.wav',
-             'arrowHit': 'assets/audio/arrow_hit.wav',
-             'enemyHit': 'assets/audio/enemy_hit.wav',
-             'enemyDie': 'assets/audio/enemy_die.wav',
-             'playerHit': 'assets/audio/player_hit.wav',
-             'towerHit': 'assets/audio/tower_hit.wav',
-             'backgroundMusic': 'assets/audio/medieval_loop.mp3',
+             'bowDraw': '/assets/audio/bow_draw.wav',
+             'arrowShoot': '/assets/audio/arrow_shoot.wav',
+             'arrowHit': '/assets/audio/arrow_hit.wav',
+             'enemyHit': '/assets/audio/enemy_hit.wav',
+             'enemyDie': '/assets/audio/enemy_die.wav',
+             'playerHit': '/assets/audio/player_hit.wav',
+             'towerHit': '/assets/audio/tower_hit.wav',
+             'backgroundMusic': '/assets/audio/medieval_loop.mp3',
         };
         this.totalAssets = Object.keys(this.assetsToLoad).length;
         this.loadedAssetsCount = 0;
