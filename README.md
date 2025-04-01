@@ -1,6 +1,6 @@
 # Vibe Archer Game - Skunkworks Edition 🏎️🦨
 
-[Play the game](https://vibejam-archer-defense.pages.dev/](https://tower-defense-game.paumier.works/)
+[Play the game](https://tower-defense-game.paumier.works/)
 
 ## What is this Glorious Mess?
 
