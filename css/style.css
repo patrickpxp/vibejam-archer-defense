@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    font-family: sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+#gameCanvas {
+    display: block; /* Remove extra space below canvas */
+    width: 100vw;
+    height: 100vh;
+}
+
+#uiOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicking through the overlay to the canvas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+#uiOverlay > div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#healthInfo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#gameInfo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-align: right;
+}
+
+/* Added styles for Game Title */
+#gameTitle {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center;
+    font-size: 1.1em; /* Slightly larger font */
+    font-weight: bold;
+}
+/* End Added styles */
+
+#upgradeSection {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+#upgradeSection button {
+    pointer-events: all; /* Make buttons clickable */
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#messageOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: none; /* Hidden by default */
+    pointer-events: all; /* Allow interaction when visible */
+}
+#messageOverlay.visible {
+    display: block;
+}
+#messageOverlay button {
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+/* Add styles for specific UI elements as needed */
+#towerHealth, #playerHealth, #waveNumber, #score, #resources {
+    font-weight: bold;
+}

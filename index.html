@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archer's Defense</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="uiOverlay">
+        <div id="gameTitle">
+            <p>🏎️ Paumier.works game skunkworks 🦨</p> <!-- Added Title -->
+        </div>
+        <div id="healthInfo">
+            <p>Tower Health: <span id="towerHealth">100</span></p>
+
+        </div>
+        <div id="gameInfo">
+            <p>Wave: <span id="waveNumber">1</span></p>
+            <p>Score: <span id="score">0</span></p>
+
+        </div>
+
+
+        <div id="messageOverlay">
+             <p id="messageText"></p>
+             <button id="restartButton" style="display: none;">Restart Game</button>
+        </div>
+    </div>
+
+    <!-- Added Vibe Jam Link -->
+    <a target="_blank" href="https://jam.pieter.com" style="font-family: 'system-ui', sans-serif; position: fixed; bottom: -1px; right: -1px; padding: 7px; font-size: 14px; font-weight: bold; background: #fff; color: #000; text-decoration: none; z-index: 10; border-top-left-radius: 12px; z-index: 10000; border: 1px solid #fff;">🕹️ Vibe Jam 2025</a>
+</body>
+<script type="module" src="/js/main.js"></script>
+</html>
