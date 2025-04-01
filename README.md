@@ -1,5 +1,7 @@
 # Vibe Archer Game - Skunkworks Edition 🏎️🦨
 
+[Play the game](https://vibejam-archer-defense.pages.dev/)
+
 ## What is this Glorious Mess?
 
 Welcome to the... uh... *mostly* functional Vibe Archer Game! Built during the [** 2025 Vibe Coding Game Jam 2025**](https://jam.pieter.com/) (shoutout!), this is our magnum opus... or maybe just an opus. It was lovingly (and sometimes frustratingly) cobbled together with the help of our AI coding buddy, Cline.
